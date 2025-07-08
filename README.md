@@ -1,0 +1,2 @@
+# SMART BLINDS PROJECT
+## began Jan 2025
