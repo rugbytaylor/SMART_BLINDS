@@ -1,5 +1,4 @@
 # SMART_BLINDS
-## ESP32
 This is the C code for my smart blinds project for an ESP32
 
 dec 12, 10:34pm update notes
