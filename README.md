@@ -6,3 +6,5 @@ dec 12, 10:34pm update notes
 - need to format old code into new State Machine(SM) setup
 - build CI/CD pipeline (with unit tests!)
 - in the future: make a full OTA system with this
+
+- chat said to implement with 28BYJ-48 stepper motor??
