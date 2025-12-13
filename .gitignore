@@ -1,0 +1,17 @@
+# Build output
+build/
+
+# ESP-IDF generated files
+sdkconfig
+sdkconfig.old
+
+# ESP-IDF tools and caches
+.espressif/
+managed_components/
+
+# VS Code
+.vscode/
+
+# OS junk
+.DS_Store
+Thumbs.db
