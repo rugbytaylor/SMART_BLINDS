@@ -1,10 +1,11 @@
 # SMART_BLINDS
-This is the C code for my smart blinds project for an ESP32
+This is the code to the embedded C smart blinds project
 
-dec 12, 10:34pm update notes
-- need to copy code from master branch to `main.c` and `blinds_SM.c`
-- need to format old code into new State Machine(SM) setup
+dec 15, 7:50pm update notes
+- need to test current code with hardware to verify its working
 - build CI/CD pipeline (with unit tests!)
-- in the future: make a full OTA system with this
+- work on transitioning to use potentiometer or stepper motor
 
-- chat said to implement with 28BYJ-48 stepper motor??
+## Future updates
+- motor changes: 28BYJ-48 stepper motor?? (from chat)
+- make a full OTA system for this
