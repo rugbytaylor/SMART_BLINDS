@@ -1,4 +1,6 @@
 #include "button.h"
+#include "esp_log.h"
+static const char *TAG = "button";
 
 void button_init(gpio_num_t pin)
 {

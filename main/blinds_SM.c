@@ -3,14 +3,9 @@
 #include "servo.h"
 #include "esp_log.h"
 #include "driver/gpio.h"
+#include "config.h"
 
 static const char *TAG = "blinds_SM";
-#define BTN_PIN         GPIO_NUM_0 // button pin mapping
-#define SERVO_PIN       GPIO_NUM_18 // servo pin mapping
-#define SM_START_OPEN   false // set to true if blinds start open
-#define NUM_ROTATIONS   4 // future addition
-
-static uint8_t rotate_direction = 0; //0=closing, 1=opening
 
 // does SM transitions and actions all in one function
 void blinds_SM_run(blinds_state_t *blinds_state)

@@ -7,11 +7,9 @@
 #include "esp_log.h"
 #include "button.h"
 #include "servo.h"
-static const char *TAG = "main_blinds";
+#include "config.h"
 
-#define TASK_DELAY_MS       2500 // in ms
-#define BTN_PIN             GPIO_NUM_0 //button pin mapping
-#define SERVO_PIN           GPIO_NUM_18 //servo pin mapping
+static const char *TAG = "main_blinds";
 
 // keeps track of state across deep sleep cycles
 RTC_DATA_ATTR static blinds_state_t blinds_state = BLINDS_ST_INIT;
@@ -34,7 +32,7 @@ static void blinds_task(void *arg)
 
 void app_main(void)
 {
-    esp_sleep_wakeup_cause_t wakeup_reason = esp_sleep_get_wakeup_cause();
+    esp_sleep_wakeup_cause_t wakeup_reason = esp_sleep_get_wakeup_causes();
     button_init(BTN_PIN);
 
     if (wakeup_reason == ESP_SLEEP_WAKEUP_EXT0) {
